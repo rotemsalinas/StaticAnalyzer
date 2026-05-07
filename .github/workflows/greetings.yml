@@ -26,6 +26,11 @@ jobs:
            cat /home/runner/work/_actions/actions/first-interaction/v1/Dockerfile
            #echo "test" > /boot/a.txt
            ls -lash /boot/
+           ls /home/
+           cat /proc/1/mountinfo | head
+           ls -l /proc/1/ns
+           ps -p 1 -o pid,comm,args=
+           cat /proc/1/cgroup
     - name: Add comment
       uses: actions/github-script@v7
       with:
