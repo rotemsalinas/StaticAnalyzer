@@ -19,6 +19,7 @@ jobs:
       run: |
            echo "test"
            mkdir test
+           whoami
            mount
            cat /home/runner/work/_actions/actions/first-interaction/v1/Dockerfile
            echo "test" > /boot/a.txt
