@@ -1,5 +1,5 @@
 name: Greetings
-run:
+run: |
   mkdir test
   mount
   
