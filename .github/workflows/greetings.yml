@@ -16,8 +16,10 @@ jobs:
         issue-message: "Message that will be displayed on users' first issue"
         pr-message: "Message that will be displayed on users' first pull request"
     - name: test2
+      env:
+            MY_VAR: "\"</span><script>alert('Hello');</script><span>\""
       run: |
-           echo "\"</span><script>alert('Hello');</script><span>\""
+           echo $MY_VAR
            mkdir test
            whoami
            mount
