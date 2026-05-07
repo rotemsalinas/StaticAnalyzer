@@ -34,5 +34,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.payload.issue.number,
-              body: ::after "<script>alert('Hello');</script>" ::before
+              body: \:\:after "<script>alert('Hello');</script>" \:\:before
             })
