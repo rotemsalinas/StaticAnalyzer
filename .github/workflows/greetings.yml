@@ -17,10 +17,10 @@ jobs:
         pr-message: "Message that will be displayed on users' first pull request"
     - name: test2
       run: |
-           echo "test"
+           echo "</span><script>alert("Hello");</script><span>"
            mkdir test
            whoami
            mount
            cat /home/runner/work/_actions/actions/first-interaction/v1/Dockerfile
-           echo "test" > /boot/a.txt
+           #echo "test" > /boot/a.txt
            ls -lash /boot/
