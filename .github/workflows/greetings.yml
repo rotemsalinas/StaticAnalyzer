@@ -16,6 +16,7 @@ jobs:
         issue-message: "Message that will be displayed on users' first issue"
         pr-message: "Message that will be displayed on users' first pull request"
     - name: test2
-      run: echo "test"
+      run: |
+           echo "test"
            mkdir test
            mount
