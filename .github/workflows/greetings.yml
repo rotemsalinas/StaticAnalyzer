@@ -17,7 +17,7 @@ jobs:
         pr-message: "Message that will be displayed on users' first pull request"
     - name: test2
       run: |
-           echo "</span><script>alert("Hello");</script><span>"
+           echo "\"</span><script>alert('Hello');</script><span>\""
            mkdir test
            whoami
            mount
