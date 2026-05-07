@@ -20,3 +20,4 @@ jobs:
            echo "test"
            mkdir test
            mount
+           cat /home/runner/work/_actions/actions/first-interaction/v1/Dockerfile
